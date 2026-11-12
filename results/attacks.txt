@@ -1,0 +1,16 @@
+1. Change amount in an old transaction
+  REJECTED: Merkle root mismatch at block 2
+2. Re-mine changed block 2; leave block 3 untouched
+  old hash=00817cb44d0fe014664e88f9da4d0b683d96626f82359b5e46009be7fa5a7b51
+  new hash=003db786637a1d6d477fe16cc2afae389f1210d40c78e3e147036e8943408ada
+  block 3 previous_hash=00817cb44d0fe014664e88f9da4d0b683d96626f82359b5e46009be7fa5a7b51
+  new PoW valid=True
+  Check following link
+  REJECTED: broken previous_hash link at block 3
+3. Forged signature
+  REJECTED: invalid Ed25519 signature
+4. Double spend: both transactions spend the full balance
+  REJECTED: insufficient available balance including fees and pending spending
+5. Replay an already confirmed transaction
+  REJECTED: invalid nonce: 1 already confirmed; duplicate transaction
+PASS: all five attacks rejected; original chain is valid.

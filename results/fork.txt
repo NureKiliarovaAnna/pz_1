@@ -1,0 +1,19 @@
+BEFORE PARTITION: common funded chain
+  port=8001 height=1 work=256 tip=0060fee498b04d9b076e471b337fb243632822b4391a092bb033e3920280d75f mempool=0
+  port=8002 height=1 work=256 tip=0060fee498b04d9b076e471b337fb243632822b4391a092bb033e3920280d75f mempool=0
+  port=8003 height=1 work=256 tip=0060fee498b04d9b076e471b337fb243632822b4391a092bb033e3920280d75f mempool=0
+DURING PARTITION: A has transaction; B/C have more work
+  port=8001 height=2 work=512 tip=00edd6b910ec1da840a8ff76900d55a6a82dc62aa95a3d3d05fe32c3c1f17a01 mempool=0
+  port=8002 height=3 work=768 tip=00c4abfedb944b1409b0160bb67bbb21f5eb3d33a0fcfb668c160dcc0a4950af mempool=0
+  port=8003 height=3 work=768 tip=00c4abfedb944b1409b0160bb67bbb21f5eb3d33a0fcfb668c160dcc0a4950af mempool=0
+ORPHAN TRANSACTION RETURNED TO A MEMPOOL: 174f1bd42ce4d2824867b804c0b1a94fb6a4d85459e0d2929051239349a165b8
+Returned transaction automatically relayed to B and C.
+AFTER SYNCHRONIZATION: common tip
+  port=8001 height=3 work=768 tip=00c4abfedb944b1409b0160bb67bbb21f5eb3d33a0fcfb668c160dcc0a4950af mempool=1
+  port=8002 height=3 work=768 tip=00c4abfedb944b1409b0160bb67bbb21f5eb3d33a0fcfb668c160dcc0a4950af mempool=1
+  port=8003 height=3 work=768 tip=00c4abfedb944b1409b0160bb67bbb21f5eb3d33a0fcfb668c160dcc0a4950af mempool=1
+ORPHAN TRANSACTION CONFIRMED AGAIN
+  port=8001 height=4 work=1024 tip=009e16a59cd66b73e2f1cad7e4927ec70d7df6ff7ec7f33f3c3c032bca9a87d2 mempool=0
+  port=8002 height=4 work=1024 tip=009e16a59cd66b73e2f1cad7e4927ec70d7df6ff7ec7f33f3c3c032bca9a87d2 mempool=0
+  port=8003 height=4 work=1024 tip=009e16a59cd66b73e2f1cad7e4927ec70d7df6ff7ec7f33f3c3c032bca9a87d2 mempool=0
+PASS: three processes converged; returned transaction confirmed.

@@ -1,0 +1,41 @@
+test_rest_peer_registration (test_blockchain.ApiTests.test_rest_peer_registration) ... ok
+test_rest_rejection_and_pause (test_blockchain.ApiTests.test_rest_rejection_and_pause) ... ok
+test_rest_wallet_mine_balance_validate_headers_proof (test_blockchain.ApiTests.test_rest_wallet_mine_balance_validate_headers_proof) ... ok
+test_balance_reserves_fees_and_pending_cost (test_blockchain.BlockchainTests.test_balance_reserves_fees_and_pending_cost) ... ok
+test_block_rejects_overspend_and_bad_nonce (test_blockchain.BlockchainTests.test_block_rejects_overspend_and_bad_nonce) ... ok
+test_canonical_serialization_and_signature (test_blockchain.BlockchainTests.test_canonical_serialization_and_signature) ... ok
+test_confirmed_replay_nonce (test_blockchain.BlockchainTests.test_confirmed_replay_nonce) ... ok
+test_difficulty_retarget_up_and_down (test_blockchain.BlockchainTests.test_difficulty_retarget_up_and_down) ... ok
+test_duplicate_mempool (test_blockchain.BlockchainTests.test_duplicate_mempool) ... ok
+test_fee_selection_preserves_nonce_and_limit (test_blockchain.BlockchainTests.test_fee_selection_preserves_nonce_and_limit) ... ok
+test_full_validation_checks_signature_after_remining (test_blockchain.BlockchainTests.test_full_validation_checks_signature_after_remining) ... ok
+test_genesis_is_identical_and_body_protected (test_blockchain.BlockchainTests.test_genesis_is_identical_and_body_protected) ... ok
+test_header_hash_mismatch (test_blockchain.BlockchainTests.test_header_hash_mismatch) ... ok
+test_insufficient_confirmed_balance (test_blockchain.BlockchainTests.test_insufficient_confirmed_balance) ... ok
+test_invalid_heavier_chain_never_adopted (test_blockchain.BlockchainTests.test_invalid_heavier_chain_never_adopted) ... ok
+test_invalid_numeric_values (test_blockchain.BlockchainTests.test_invalid_numeric_values) ... ok
+test_light_client_uses_only_headers_and_detects_false_proof (test_blockchain.BlockchainTests.test_light_client_uses_only_headers_and_detects_false_proof) ... ok
+test_merkle_empty_single_and_five_leaves (test_blockchain.BlockchainTests.test_merkle_empty_single_and_five_leaves) ... ok
+test_merkle_even (test_blockchain.BlockchainTests.test_merkle_even) ... ok
+test_merkle_odd_duplicates_last (test_blockchain.BlockchainTests.test_merkle_odd_duplicates_last) ... ok
+test_nonce_gap_and_conflict (test_blockchain.BlockchainTests.test_nonce_gap_and_conflict) ... ok
+test_old_body_change_detected (test_blockchain.BlockchainTests.test_old_body_change_detected) ... ok
+test_peer_block_transaction_limit_is_consensus_rule (test_blockchain.BlockchainTests.test_peer_block_transaction_limit_is_consensus_rule) ... ok
+test_pending_incoming_is_not_spendable (test_blockchain.BlockchainTests.test_pending_incoming_is_not_spendable) ... ok
+test_pow_and_hash (test_blockchain.BlockchainTests.test_pow_and_hash) ... ok
+test_public_key_must_match_sender (test_blockchain.BlockchainTests.test_public_key_must_match_sender) ... ok
+test_remined_block_breaks_next_link (test_blockchain.BlockchainTests.test_remined_block_breaks_next_link) ... ok
+test_reorg_drops_conflicting_orphan (test_blockchain.BlockchainTests.test_reorg_drops_conflicting_orphan) ... ok
+test_reorg_returns_orphan_and_reconfirms_it (test_blockchain.BlockchainTests.test_reorg_returns_orphan_and_reconfirms_it) ... ok
+test_restart_rejects_corrupted_chain (test_blockchain.BlockchainTests.test_restart_rejects_corrupted_chain) ... ok
+test_restart_restores_chain_and_mempool (test_blockchain.BlockchainTests.test_restart_restores_chain_and_mempool) ... ok
+test_reward_and_fees_balances (test_blockchain.BlockchainTests.test_reward_and_fees_balances) ... ok
+test_reward_inflation_rejected (test_blockchain.BlockchainTests.test_reward_inflation_rejected) ... ok
+test_shorter_chain_wins_by_accumulated_work (test_blockchain.BlockchainTests.test_shorter_chain_wins_by_accumulated_work) ... ok
+test_signature_detects_changed_amount (test_blockchain.BlockchainTests.test_signature_detects_changed_amount) ... ok
+test_wrong_difficulty_is_rejected_even_with_valid_pow (test_blockchain.BlockchainTests.test_wrong_difficulty_is_rejected_even_with_valid_pow) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.129s
+
+OK
